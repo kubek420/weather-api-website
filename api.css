@@ -1,0 +1,202 @@
+@import url(https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400&family=Quicksand&display=swap);
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family:"Quicksand",sans-serif;font-weight:400;
+}
+.weather-box{
+    width: 600px;
+    height: 400px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #4a526be0;
+    color: white;
+    text-align: center;
+    position: relative;
+    animation: tak 2s linear;
+}
+@keyframes tak{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.weather-icon{
+    position: absolute;
+    right: 25px;
+    top: 0px;
+    width: 100px;
+    height: 100px;
+}
+.weather-temp{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    font-size: 36px;
+    font-weight: bold;
+}
+.weather-icon-text{
+    position: absolute;
+    right: 25px;
+    top: 75px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.change-city{
+    width: 30vw;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.change-city form{
+    width: 30vw;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+.change-city form input{
+    height: 30px;
+    width: 80%;
+    outline: 0;
+    border: 0;
+    margin: 0;
+    padding: 0 20px;
+    border-radius: 12px 0px 0 12px;
+}
+.change-city form button{
+    height: 30px;
+    width: 20%;
+    outline: 0;
+    border: 0;
+    border-radius: 0 12px 12px 0px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(46, 77, 136);
+    color: white;
+    cursor: pointer;
+}
+.mobile{
+    background-color: #4a526be0;
+    color: white;
+    width: 80vw;
+    min-height: 50vh;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    padding-bottom: 20px;
+}
+.mobile .temp{
+    width: 80%;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.mobile .temp .temp-icon{
+    height: 80px;
+}
+.mobile .temp .temp-temp{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+.mobile .feels{
+    font-size: 80%;
+    padding: 6px;
+    text-align: center;
+}
+.mobile .feels--bigger{
+    font-size: 50%;
+    padding: 6px;
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+}
+.mobile .info{
+    height: 80px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.mobile .feels-time{
+    font-size: 60%;
+    position: relative;
+    bottom: 20px;
+}
+
+.city{
+    background-color: #4a526be0;
+    color: white;
+    width: 80vw;
+    min-height: 80px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.city h1{
+    height: 30px;
+    width: 100%;
+    text-align: center;
+}
+.city form{
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.city form input{
+    width: 50%;
+    height: 35px;
+    border-radius: 12px 0px 0 12px;
+    border: 0;
+    outline: 0;
+    padding: 15px;
+    background-color: white;
+}
+.city form button{
+    width: 25%;
+    height: 35px;
+    border-radius: 0px 12px 12px 0px;
+    border: 0;
+    outline: 0;
+    background-color: rgb(223, 223, 223);
+    cursor: pointer;
+}
+.city form button:hover{
+    background-color: rgb(197, 197, 197);
+}
+.mobile--error{
+    background-color: #4a526be0;
+    color: white;
+    width: 80vw;
+    min-height: 20vh;
+    font-size: 12px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+}

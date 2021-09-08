@@ -1,0 +1,19 @@
+{
+  "name": "kubekWeather",
+  "short_name": "kubek",
+  "description": "Progressive Web App kubek.",
+  "icons": [
+    {
+      "src": "icons/weather-icon32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/weather-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "https://vcode.pl/weather/index.php",
+  "display": "fullscreen"
+}
