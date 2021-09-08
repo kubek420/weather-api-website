@@ -6,7 +6,7 @@ if(empty($_GET['miasto'])){
     $cityId = $_GET['miasto'];
 }
 
-$apiKey = "1b8d1337093372fdbecc1ef3c280d2b8";
+$apiKey = "token";
 $googleApiUrl = "http://api.openweathermap.org/data/2.5/weather?q=" . $cityId . "&lang=pl&units=metric&APPID=" . $apiKey;
 $response = file_get_contents($googleApiUrl);
 //$ch = curl_init();
